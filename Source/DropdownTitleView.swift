@@ -21,7 +21,7 @@ open class DropdownTitleView: UIControl {
     internal let horizontalStackView = UIStackView()
     internal let verticalStackView = UIStackView()
 
-    init() {
+    public init() {
         super.init(frame: .zero)
         isAccessibilityElement = true
         accessibilityTraits |= UIAccessibilityTraitButton
