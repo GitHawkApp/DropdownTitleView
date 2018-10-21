@@ -13,7 +13,7 @@ import Snap_swift
 class Tests: XCTestCase {
 
     override func setUp() {
-        isRecording = true
+//        isRecording = true
     }
 
     func test_withTitle_withSubtitle_withChevron_withBackgrounds_whenSettingFrame() {
