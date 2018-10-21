@@ -1,0 +1,4 @@
+language: swift
+osx_image: xcode10
+script:
+  - xcodebuild clean test -workspace DropdownTitleView.xcworkspace -scheme DropdownTitleView -destination "platform=iOS Simulator,name=iPhone X,OS=latest" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO

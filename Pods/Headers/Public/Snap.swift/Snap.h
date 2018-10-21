@@ -1,0 +1,1 @@
+../../../Snap.swift/Snap/Core/Infrastructure/Interoperability/Snap.h
