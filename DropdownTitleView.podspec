@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'Navigation item title view with subtitle and chevron.'
   spec.source       = { :git => 'https://github.com/GitHawkApp/DropdownTitleView.git', :tag => '#{s.version}' }
   spec.source_files = 'Source/*.swift'
-  s.resources       = "Source/Assets.xcassets"
+  spec.resources    = "Source/Assets.xcassets"
   spec.platform     = :ios, '10.0'
   spec.swift_version = '4.0'
 end
