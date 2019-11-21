@@ -128,19 +128,10 @@ open class DropdownTitleView: UIControl {
         }
     }
 
-    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        fadeControls(alpha: 0.5)
-    }
-
-    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesEnded(touches, with: event)
-        fadeControls(alpha: 1)
-    }
-
-    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesCancelled(touches, with: event)
-        fadeControls(alpha: 1)
+    open override var isHighlighted: Bool {
+        didSet {
+            fadeControls(alpha: isHighlighted ? 0.5 : 1)
+        }
     }
 
     open override func sizeThatFits(_ size: CGSize) -> CGSize {
