@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class DropdownTitleView: UIControl {
+open class BREAK_DropdownTitleView: UIControl {
 
     internal let titleLabel = UILabel()
     internal let subtitleLabel = UILabel()
